@@ -7,7 +7,17 @@
     <title>USSG</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" style="display: flex; flex-direction: row">
+      <canvas id="worldCanvas" width="1200" height="900"></canvas>
+      <div style="margin: 10px">
+        <div id="roadsNetworks"></div>
+        <h5>Select</h5>
+        <div>
+          <button onclick="onPointerSelectionClick()">Pointer</button>
+          <button onclick="onRoadSelectionClick()">Road</button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
